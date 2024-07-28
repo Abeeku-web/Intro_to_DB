@@ -27,6 +27,7 @@ except mysql.connector.Error as err:
     elif err.errno == errorcode.ER_BAD_DB_ERROR:
         print(f"Database '{database_name}' does not exist.")
     else:
+        
         print(err)
 finally:
     # Close cursor and connection
