@@ -13,11 +13,12 @@ database_name = 'alx_book_store'
 
 try:
     # Connect to MySQL server
-    conn = mysql.connector.connect(**config)
-    cursor = conn.cursor()
+    # conn = mysql.connector.connect(**config)
+    # cursor = conn.cursor()
 
     # Create database if it does not exist
-    cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database_name}")
+    # 
+    CREATE DATABASE IF NOT EXISTS alx_book_store;
     print(f"Database '{database_name}' created successfully!")
 
 except mysql.connector.Error as err:
